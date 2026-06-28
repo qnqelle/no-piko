@@ -3,17 +3,93 @@ parallel-jobs = 1
 # cli-version = "dev"
 enable-module-update = true
 
-[acalendar-morphe]
-enabled = true 
-app-name = "acalendar"
-rv-brand = "morphe"
-build-mode = "apk"
-arch = "all"
-patches-source = "binarymend/morphe-patches"
+[YouTube]
+enabled = true
+module-prop-name = "youtube-morphe"
+github-dlurl = "https://github.com/AzyrRuthless/YTYTM-APK/releases/latest"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
+patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://acalendar.en.uptodown.com/android"
+build-mode = "both"
+arch = "both"
 dpi = "nodpi anydpi"
-apkpure-dlurl = "https://apkpure.com/acalendar-your-calendar/org.withouthat.acalendar"
+rv-brand = "Morphe"
+patcher-args = """\
+  -e 'Custom branding' -OcustomName='YouTube' -OcustomIcon=assets/youtube/icon \
+  -e 'Change header' -Ocustom=assets/youtube/header \
+  -e 'Theme' -OdarkThemeBackgroundColor=@android:color/black -OlightThemeBackgroundColor=@android:color/white \
+"""
 
+[YT-Music]
+enabled = true
+module-prop-name = "yt-music-morphe"
+github-dlurl = "https://github.com/AzyrRuthless/YTYTM-APK/releases/latest"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+build-mode = "both"
+arch = "both"
+dpi = "nodpi anydpi"
+rv-brand = "Morphe"
+patcher-args = """\
+  -e 'Custom branding' -OcustomName='YT Music' -OcustomIcon=assets/yt-music/icon \
+  -e 'Theme' -OdarkThemeBackgroundColor=@android:color/black \
+"""
 
+[TikTok]
+enabled = true
+module-prop-name = "tiktok-morphe"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.zhiliaoapp.musically"
+uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
+patches-source = "icysymmetra/tiktok-patches-for-morphe"
+cli-source = "MorpheApp/morphe-cli"
+build-mode = "both"
+arch = "both"
+dpi = "nodpi anydpi"
+rv-brand = "Morphe"
 
+[Twitter]
+enabled = true
+module-prop-name = "twitter-piko"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.twitter.android"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
+patches-source = "'inotia00/x-shim' 'crimera/piko'"
+patches-source-host = "'gitlab' 'github'"
+cli-source = "MorpheApp/morphe-cli"
+build-mode = "both"
+arch = "both"
+dpi = "nodpi anydpi"
+rv-brand = "Piko"
+included-patches = """\
+  'Bring back twitter' \
+  'Browse tweet object' \
+  'Dynamic color' \
+  'Export all activities' \
+"""
+excluded-patches = """\
+  'Disunify xchat system' \
+  'Change version code' \
+"""
+
+[Instagram]
+enabled = false
+module-prop-name = "instagram-piko"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
+github-dlurl = "https://github.com/nullcpy/apks/releases/tag/com.instagram.android"
+uptodown-dlurl = "https://instagram.en.uptodown.com/androidd"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+patches-source = "crimera/piko"
+cli-source = "MorpheApp/morphe-cli"
+build-mode = "both"
+arch = "both"
+dpi = "nodpi anydpi"
+rv-brand = "Piko"
+excluded-patches = """\
+  'Clone' \
+"""

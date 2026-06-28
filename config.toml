@@ -1,3 +1,8 @@
+parallel-jobs = 1
+# patches-version = "dev"
+# cli-version = "dev"
+enable-module-update = true
+
 [YouTube]
 enabled = true
 module-prop-name = "youtube-morphe"
@@ -41,12 +46,15 @@ module-prop-name = "tiktok-morphe"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.zhiliaoapp.musically"
 uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
-patches-source = "icysymmetra/tiktok-patches-for-morphe"
+patches-source = "'icysymmetra/tiktok-patches-for-morphe' 'MorpheApp/morphe-patches'"
 cli-source = "MorpheApp/morphe-cli"
 build-mode = "both"
 arch = "arm64-v8a"
 dpi = "nodpi anydpi"
 rv-brand = "Morphe"
+included-patches = """\
+  'Disable Play Store updates' \
+"""
 
 [Twitter]
 enabled = true

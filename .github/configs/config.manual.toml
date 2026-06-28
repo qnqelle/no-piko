@@ -74,7 +74,6 @@ included-patches = """\
 """
 excluded-patches = """\
   'Disunify xchat system' \
-  'Change version code' \
 """
 
 [Instagram]

@@ -1,220 +1,90 @@
-[youtube-revanced]
+[YouTube]
 enabled = true
-app-name = "youtube"
-rv-brand = "revanced"
-build-mode = "both"
-arch = "both"
-patches-source = "ReVanced/revanced-patches"
-cli-source = "ReVanced/revanced-cli"
+module-prop-name = "youtube-morphe"
+github-dlurl = "https://github.com/AzyrRuthless/YTYTM-APK/releases/latest"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
-
-[youtube-music-revanced]
-enabled = true
-app-name = "youtube-music"
-rv-brand = "revanced"
-build-mode = "both"
-arch = "both"
-patches-source = "ReVanced/revanced-patches"
-cli-source = "ReVanced/revanced-cli"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
-
-[google-photos-revanced]
-enabled = true
-app-name = "google-photos"
-rv-brand = "revanced"
-build-mode = "both"
-arch = "both"
-patches-source = "ReVanced/revanced-patches"
-cli-source = "ReVanced/revanced-cli"
-uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
-dpi = "nodpi anydpi"
-# archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.photos"
-
-[messenger-revanced]
-enabled = true
-app-name = "messenger"
-rv-brand = "revanced"
-build-mode = "apk"
-arch = "both"
-patches-source = "ReVanced/revanced-patches"
-cli-source = "ReVanced/revanced-cli"
-uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
-dpi = "nodpi anydpi"
-
-[youtube-anddea]
-enabled = true
-app-name = "youtube"
-rv-brand = "anddea"
-build-mode = "both"
-arch = "both"
-patches-source = "anddea/revanced-patches"
-cli-source = "MorpheApp/morphe-cli"
-patcher-args = "-e 'Theme' -OdarkThemeBackgroundColor=@android:color/black"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
-
-[youtube-music-anddea]
-enabled = true
-app-name = "youtube-music"
-rv-brand = "anddea"
-build-mode = "both"
-arch = "both"
-patches-source = "anddea/revanced-patches"
-cli-source = "MorpheApp/morphe-cli"
-patcher-args = "-e 'Dark theme' -OdarkThemeBackgroundColor=@android:color/black"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
-
-[twitter-morphe]
-enabled = true 
-app-name = "twitter"
-rv-brand = "morphe"
-build-mode = "both"
-arch = "both"
-patches-source = "'inotia00/x-shim' 'crimera/piko'"
-patches-source-host = "'gitlab' 'github'"
-# version = "11.81.0-release.0"
-# patcher-args = "--continue-on-error"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.twitter.android"
-
-[twitter-morphe-materialu]
-enabled = true 
-app-name = "twitter"
-rv-brand = "morphe-materialu"
-build-mode = "both"
-arch = "both"
-patches-source = "'inotia00/x-shim' 'crimera/piko'"
-patches-source-host = "'gitlab' 'github'"
-# patcher-args = "--continue-on-error"
-included-patches = "'Bring back twitter' 'Dynamic color'"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.twitter.android"
-
-[instagram-morphe-piko]
-enabled = true 
-app-name = "instagram"
-rv-brand = "morphe-piko"
-build-mode = "both"
-arch = "all"
-patches-source = "crimera/piko"
-# patcher-args = "--continue-on-error"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://instagram.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
-github-dlurl = "https://github.com/nullcpy/apks/releases/tag/com.instagram.android"
-
-[youtube-morphe]
-enabled = true
-app-name = "youtube"
-rv-brand = "morphe"
-build-mode = "both"
-arch = "both"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
-
-[youtube-music-morphe]
-enabled = true
-app-name = "youtube-music"
-rv-brand = "morphe"
 build-mode = "both"
 arch = "both"
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
+dpi = "nodpi anydpi"
+rv-brand = "Morphe"
+patcher-args = """\
+  -e 'Custom branding' -OcustomName='YouTube' -OcustomIcon=assets/youtube/icon \
+  -e 'Change header' -Ocustom=assets/youtube/header \
+  -e 'Theme' -OdarkThemeBackgroundColor=@android:color/black -OlightThemeBackgroundColor=@android:color/white \
+"""
+
+[YT-Music]
+enabled = true
+module-prop-name = "yt-music-morphe"
+github-dlurl = "https://github.com/AzyrRuthless/YTYTM-APK/releases/latest"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
-
-[reddit-morphe]
-enabled = true
-app-name = "reddit"
-rv-brand = "morphe"
-build-mode = "both"
-arch = "both"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.reddit.frontpage"
-
-[google-photos-morphe]
-enabled = true
-app-name = "google-photos"
-rv-brand = "morphe"
 build-mode = "both"
 arch = "both"
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
 dpi = "nodpi anydpi"
-# archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.photos"
+rv-brand = "Morphe"
+patcher-args = """\
+  -e 'Custom branding' -OcustomName='YT Music' -OcustomIcon=assets/yt-music/icon \
+  -e 'Theme' -OdarkThemeBackgroundColor=@android:color/black \
+"""
 
-[instagram-morphe]
-enabled = true 
-app-name = "instagram"
-rv-brand = "morphe"
-build-mode = "apk"
-arch = "both"
-patches-source = "brosssh/morphe-patches"
-# patcher-args = "--continue-on-error"
-cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://instagram.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
-github-dlurl = "https://github.com/nullcpy/apks/releases/tag/com.instagram.android"
-
-[tiktok-morphe]
+[TikTok]
 enabled = true
-app-name = "tiktok"
-rv-brand = "morphe"
-build-mode = "apk"
-arch = "both"
-patches-source = "icysymmetra/tiktok-patches-for-morphe"
-cli-source = "MorpheApp/morphe-cli"
+module-prop-name = "tiktok-morphe"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.zhiliaoapp.musically"
 uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
-dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.zhiliaoapp.musically"
-
-[reddit-morphe-adobo]
-enabled = true
-app-name = "reddit"
-rv-brand = "morphe-adobo"
-build-mode = "apk"
-arch = "both"
-patches-source = "jkennethcarino/adobo"
+patches-source = "icysymmetra/tiktok-patches-for-morphe"
 cli-source = "MorpheApp/morphe-cli"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
+build-mode = "both"
+arch = "both"
 dpi = "nodpi anydpi"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.reddit.frontpage"
+rv-brand = "Morphe"
 
+[Twitter]
+enabled = true
+module-prop-name = "twitter-piko"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.twitter.android"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
+patches-source = "'inotia00/x-shim' 'crimera/piko'"
+patches-source-host = "'gitlab' 'github'"
+cli-source = "MorpheApp/morphe-cli"
+build-mode = "both"
+arch = "both"
+dpi = "nodpi anydpi"
+rv-brand = "Piko"
+included-patches = """\
+  'Bring back twitter' \
+  'Browse tweet object' \
+  'Dynamic color' \
+  'Export all activities' \
+"""
+excluded-patches = """\
+  'Disunify xchat system' \
+  'Change version code' \
+"""
 
+[Instagram]
+enabled = false
+module-prop-name = "instagram-piko"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
+github-dlurl = "https://github.com/nullcpy/apks/releases/tag/com.instagram.android"
+uptodown-dlurl = "https://instagram.en.uptodown.com/androidd"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+patches-source = "crimera/piko"
+cli-source = "MorpheApp/morphe-cli"
+build-mode = "both"
+arch = "both"
+dpi = "nodpi anydpi"
+rv-brand = "Piko"
+excluded-patches = """\
+  'Clone' \
+"""
